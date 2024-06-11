@@ -97,7 +97,7 @@ $accent-grey: #D9D9D9
     ul
         font-family: playfair-display, serif
         display: flex
-        column-gap: 68px
+        column-gap: 60px
 
 .nav-elem
     display: grid
@@ -173,12 +173,15 @@ $accent-grey: #D9D9D9
     position: absolute
     top: 37%
     left: 62%
-    height: 320px
+    max-width: 682px
+    width: 100%
     display: flex
     flex-direction: column
     justify-content: space-between
     p
         font-weight: 300
+        margin-top: 36px
+        margin-bottom: 76px
 
 .button-title
     max-width: 289px
@@ -209,6 +212,8 @@ $accent-grey: #D9D9D9
 .card
     display: flex
     column-gap: 16px
+    &:hover
+        background-color: $secondary-color
     img
         width: 140px
         height: 120px
@@ -256,10 +261,11 @@ $accent-grey: #D9D9D9
 .blog
     margin-top: 20px
     position: relative
+    margin-bottom: 185px
 
 .title-blog
     margin-top: 40px
-    margin-bottom: 24px
+    margin-bottom: 20px
 
 .circles
     max-width: 105px
@@ -279,7 +285,7 @@ $accent-grey: #D9D9D9
 .blog-wrapper
     display: flex
     margin: 56px auto 132px
-    max-width: 1406px
+    max-width: 1260px
     width: 100%
     column-gap: 16px
     div
@@ -311,7 +317,7 @@ $accent-grey: #D9D9D9
     height: 59px
     transform: rotate(180deg)
     position: absolute
-    right: 30%
+    right: 27%
     bottom: 30%
 
 .button-left
@@ -340,18 +346,21 @@ $accent-grey: #D9D9D9
         margin-bottom: 44px
 
 .footer-logo
-    margin-top: 16px
+    margin-top: 26px
     margin-left: 176px
     max-height: 308px
     max-width: 420px
     width: 100%
 
 .footer-wrapper
-    margin: 0 0 0 300px
+    margin: 0 auto
+    max-width: 1460px
+    padding-left: 96px
+    width: 100%
     font-family: dm-sans, sans-serif
     display: flex
-    column-gap: 164px
     font-size: 36px
+    justify-content: space-between
     color: #fff
 
 .footer-text
@@ -394,6 +403,7 @@ $accent-grey: #D9D9D9
     flex-direction: column
     row-gap: 16px
     margin-right: 8px
+    padding-right: 8px
     label
         letter-spacing: 3px
         margin-top: -16px
@@ -419,8 +429,186 @@ $accent-grey: #D9D9D9
 
 .footer-payment
     display: flex
+    justify-content: space-between
     margin-top: 48px
-    column-gap: 56px
 
 .mastercard
     height: 36px
+
+//@media (max-width: 1920px)
+
+
+@media (max-width: 1366px)
+    .main
+        max-width: 1366px
+
+    .container
+        padding: 0
+        max-width: 1366px
+        min-width: 1046px
+
+    .header-elem
+        margin-bottom: 20px
+
+    .wrapper-nav
+        max-width: 800px
+        margin-top: 24px
+
+    .nav
+        ul
+            column-gap: 30px
+
+    .nav-elem
+        row-gap: 12px
+        font-size: 28px
+        svg
+            width: 34px
+            height: 34px
+        p
+            font-size: 20px
+
+    .button
+        height: 68px
+        font-size: 20px
+        img
+            width: 32px
+            height: 32px
+
+    .button-nav
+        max-width: 267px
+        padding: 0 10px
+
+    .social
+        column-gap: 16px
+        max-width: 108px
+
+    .facebook
+        width: 17px
+        height: 35px
+        margin-right: 8px
+
+    .twitter
+        width: 32px
+        height: 25px
+
+    .header-title
+        height: 520px
+        font-size: 20px
+        h1
+            font-size: 32px
+
+    .header-text
+        right: 0
+        max-width: 382px
+        p
+            margin-top: 24px
+            margin-bottom: 36px
+
+    .button
+        max-width: 230px
+        height: 62px
+
+    .button-title
+        max-width: 230px
+        left: 24%
+
+
+    //
+
+
+
+    .title
+        font-size: 48px
+        margin: 64px 0
+
+    .card
+        div
+            p
+                font-size: 24px
+
+    .title-card
+        font-size: 40px
+
+
+
+
+
+    .title-blog
+        margin-top: 40px
+        margin-bottom: 24px
+
+    .circles
+        max-width: 85px
+        div
+            width: 16px
+            height: 16px
+
+    .blog-wrapper
+        margin: 50px auto
+        max-width: 870px
+        div
+            flex-direction: column
+            display: flex
+            padding: 24px 0
+            h3
+                font-size: 28px
+            p
+                font-size: 20px
+                line-height: 28px
+        img
+            width: 160px
+            height: 160px
+
+    .quote-open
+        width: 32px
+        height: 32px
+
+    .quote-close
+        width: 32px
+        height: 32px
+
+    .button-left
+        width: 36px
+        height: 36px
+
+    .button-right
+        width: 36px
+        height: 36px
+
+
+
+
+
+    .footer-logo
+        margin-left: 84px
+        max-width: 250px
+
+    .footer-wrapper
+        margin-left: 150px
+        column-gap: 82px
+        font-size: 24px
+
+    .follow
+        margin-top: 32px
+        row-gap: 28px
+
+    .home
+        ul
+            li
+                margin-top: 16px
+
+    .footer-input
+        row-gap: 8px
+        input
+            max-width: 280px
+            height: 52px
+
+    .button-footer
+        max-width: 108px
+        height: 49px
+
+    .footer-payment
+        margin-top: 20px
+
+
+
