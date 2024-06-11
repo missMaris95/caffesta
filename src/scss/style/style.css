@@ -178,6 +178,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   background-image: url("/src/images/backgroundHeader.jpg");
   background-repeat: no-repeat;
+  background-position: center center;
   height: 771px;
   font-size: 32px;
 }
@@ -227,12 +228,12 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  column-gap: 16px;
-  row-gap: 86px;
+  row-gap: 36px;
 }
 
 .card {
   display: flex;
+  padding: 16px;
   column-gap: 16px;
 }
 .card:hover {
@@ -243,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 120px;
 }
 .card div p {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 300;
 }
 
@@ -256,7 +257,7 @@ h1, h2, h3, h4, h5, h6 {
 .button-food {
   max-width: 289px;
   display: block;
-  margin: 118px auto 40px;
+  margin: 104px auto 40px;
 }
 
 .recipes {
@@ -388,28 +389,24 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
   background-color: #FF6624;
 }
-.footer div {
-  margin-bottom: 44px;
-}
 
-.footer-logo {
-  margin-top: 26px;
-  margin-left: 176px;
-  max-height: 308px;
-  max-width: 420px;
-  width: 100%;
+.logo-footer {
+  width: 420px;
+  height: 308px;
+  transform: translate(20%, 10%);
 }
 
 .footer-wrapper {
-  margin: 0 auto;
-  max-width: 1460px;
-  padding-left: 96px;
+  margin: 20px auto;
   width: 100%;
   font-family: dm-sans, sans-serif;
   display: flex;
   font-size: 36px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   color: #fff;
+}
+.footer-wrapper div {
+  margin-bottom: 45px;
 }
 
 .footer-text {
@@ -497,6 +494,110 @@ h1, h2, h3, h4, h5, h6 {
   height: 36px;
 }
 
+@media (max-width: 1920px) {
+  .wrapper-nav {
+    max-width: 1056px;
+  }
+  .nav ul {
+    column-gap: 40px;
+  }
+  .nav-elem {
+    row-gap: 12px;
+    font-size: 28px;
+  }
+  .button {
+    font-size: 28px;
+  }
+  .button-nav {
+    max-width: 302px;
+  }
+  .header-title {
+    font-size: 32px;
+  }
+  .header-title h1 {
+    font-size: 48px;
+  }
+  .header-text {
+    right: 0;
+    left: 50%;
+  }
+  .header-text p {
+    margin-bottom: 56px;
+  }
+  .button-food {
+    margin: 64px auto 40px;
+  }
+  .title {
+    font-size: 52px;
+  }
+  .card div p {
+    font-size: 26px;
+  }
+  .title-card {
+    font-size: 42px;
+  }
+  .blog {
+    margin-bottom: 80px;
+  }
+  .circles {
+    max-width: 95px;
+  }
+  .circles div {
+    width: 20px;
+    height: 20px;
+  }
+  .blog-wrapper {
+    max-width: 1045px;
+  }
+  .blog-wrapper div h3 {
+    font-size: 42px;
+  }
+  .blog-wrapper div p {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .blog-wrapper img {
+    width: 180px;
+    height: 180px;
+  }
+  .quote-open {
+    width: 58px;
+    height: 48px;
+  }
+  .quote-close {
+    width: 58px;
+    height: 48px;
+  }
+  .logo-footer {
+    width: 360px;
+    height: 250px;
+    transform: translate(10%, 10%);
+  }
+  .footer-wrapper {
+    font-size: 28px;
+  }
+  .follow {
+    margin-top: 32px;
+    row-gap: 28px;
+  }
+  .home ul li {
+    margin-top: 16px;
+  }
+  .footer-input {
+    row-gap: 8px;
+  }
+  .footer-input input {
+    max-width: 280px;
+    height: 52px;
+  }
+  .button-footer {
+    max-width: 108px;
+    height: 49px;
+  }
+  .footer-payment {
+    margin-top: 20px;
+  }
+}
 @media (max-width: 1366px) {
   .main {
     max-width: 1366px;
@@ -515,10 +616,6 @@ h1, h2, h3, h4, h5, h6 {
   }
   .nav ul {
     column-gap: 30px;
-  }
-  .nav-elem {
-    row-gap: 12px;
-    font-size: 28px;
   }
   .nav-elem svg {
     width: 34px;
@@ -553,15 +650,14 @@ h1, h2, h3, h4, h5, h6 {
     height: 25px;
   }
   .header-title {
-    height: 520px;
     font-size: 20px;
   }
   .header-title h1 {
     font-size: 32px;
   }
   .header-text {
-    right: 0;
     max-width: 382px;
+    left: 60%;
   }
   .header-text p {
     margin-top: 24px;
@@ -632,14 +728,10 @@ h1, h2, h3, h4, h5, h6 {
     width: 36px;
     height: 36px;
   }
-  .footer-logo {
-    margin-left: 84px;
-    max-width: 250px;
-  }
-  .footer-wrapper {
-    margin-left: 150px;
-    column-gap: 82px;
-    font-size: 24px;
+  .logo-footer {
+    width: 300px;
+    height: 200px;
+    transform: translate(5%, 10%);
   }
   .follow {
     margin-top: 32px;
